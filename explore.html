@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SAS Analytics Platform - Explore</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/analytics.css" rel="stylesheet">
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><script src="js/respond.min.js"></script><![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">SAS Analytics Platform</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><i class="fa fa-search"></i></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success">4</span></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Josephine Holt added College Scorecard.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Jason Moreno joined.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Attrition Stem finished running.<div class="text-muted">12 hours ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Segment ID failed.<div class="text-muted">2 days ago</div></a></li>
+          <li class="divider"></li>
+          <li style="padding: 10px;"><button class="btn btn-default btn-block">Mark All as Read</button></li>
+        </ul>
+      </li>
+      <li class="dropdown" style="margin-top: -4px;">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/24.jpg" alt="" class="img-circle"></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="secondbar">
+    <div class="pull-right">
+      <div class="btn-group">
+        <a href="#" class="btn btn-link"><i class="fa fa-undo"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-undo fa-flip-horizontal"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-save"></i></a>
+      </div>
+    </div>
+    <ol class="breadcrumb">
+      <li><a href="index.html" class="bcbar"><i class="fa fa-arrow-left"></i></a></li>
+      <li class="active">Churn Project</li>
+    </ol>
+  </div>
+  <div class="container-fluid">
+    <ul class="tabs">
+      <li><a href="prepare.html">Prepare</a></li>
+      <li class="active"><a href="explore.html">Explore</a></li>
+      <li><a href="analyze.html">Analyze</a></li>
+      <li><a href="report.html">Report</a></li>
+    </ul>
+    <hr class="tabbreak">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#Variables">Variables</a></div>
+            <div id="Variables" class="collapse in">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Tenure</a>
+                <a href="#" class="list-group-item all-scroll">Age</a>
+                <a href="#" class="list-group-item all-scroll">Homeowner</a>
+                <a href="#" class="list-group-item all-scroll">Data</a>
+                <a href="#" class="list-group-item all-scroll">CallsDay</a>
+                <a href="#" class="list-group-item all-scroll">Income</a>
+                <a href="#" class="list-group-item all-scroll">Churn</a>
+                <a href="#" class="list-group-item all-scroll">Family</a>
+                <a href="#" class="list-group-item all-scroll">Youth</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#Visualizations">Visualizations</a></div>
+            <div id="Visualizations" class="collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Bar Chart</a>
+                <a href="#" class="list-group-item all-scroll">Box Plot</a>
+                <a href="#" class="list-group-item all-scroll">Bubble Plot</a>
+                <a href="#" class="list-group-item all-scroll">Correlation Matrix</a>
+                <a href="#" class="list-group-item all-scroll">Heat Map</a>
+                <a href="#" class="list-group-item all-scroll">Histogram</a>
+                <a href="#" class="list-group-item all-scroll">Line Chart</a>
+                <a href="#" class="list-group-item all-scroll">Pie Chart</a>
+                <a href="#" class="list-group-item all-scroll">Scatter Plot</a>
+                <a href="#" class="list-group-item all-scroll">Tree Map</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#Models">Models</a></div>
+            <div id="Models" class="collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Cluster</a>
+                <a href="#" class="list-group-item all-scroll">Decision Tree</a>
+                <a href="#" class="list-group-item all-scroll">Generalized Linear Model</a>
+                <a href="#" class="list-group-item all-scroll">Regression</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-thumb-tack"></i></a></div>
+          </div>
+          <div class="panel-heading">Exploration 3</div>
+          <div class="panel-body">
+            <div id="chart_chart04" style="width: 100%; height: 575px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="panel-group" id="accordion2">
+          <div class="panel panel-default">
+            <div class="toggle pull-right"><div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a></div></div>
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Roles">Roles</a></div>
+            <div id="Roles" class="collapse in">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">CallsDay</a>
+                <a href="#" class="list-group-item all-scroll">Family</a>
+                <a href="#" class="list-group-item all-scroll">Income</a>
+                <a href="#" class="list-group-item all-scroll">Youth</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="toggle pull-right"><div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a></div></div>
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Filters">Filters</a></div>
+            <div id="Filters" class="collapse">
+              <div class="list-group">
+                <div class="list-group-item text-muted">No filters</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="toggle pull-right"><div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a></div></div>
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Ranks">Ranks</a></div>
+            <div id="Ranks" class="collapse">
+              <div class="list-group">
+                <div class="list-group-item text-muted">No ranks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="js/amcharts.js"></script>
+  <script src="js/serial.js"></script>
+  <script src="js/xy.js"></script>
+  <script src="js/chart_chart04.js"></script>
+  <script> $(document).ready(function() { $('body').tooltip({ selector: "[data-tooltip=tooltip]", container: "body" }); }); </script>
+  <script> $("#toolbar").css("height", $(document).height() - $("#toolbar").offset().top); </script>
+</body>
+</html>

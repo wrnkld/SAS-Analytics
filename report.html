@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SAS Analytics Platform - Report</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/analytics.css" rel="stylesheet">
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><script src="js/respond.min.js"></script><![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">SAS Analytics Platform</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><i class="fa fa-search"></i></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success">4</span></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Josephine Holt added College Scorecard.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Jason Moreno joined.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Attrition Stem finished running.<div class="text-muted">12 hours ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Segment ID failed.<div class="text-muted">2 days ago</div></a></li>
+          <li class="divider"></li>
+          <li style="padding: 10px;"><button class="btn btn-default btn-block">Mark All as Read</button></li>
+        </ul>
+      </li>
+      <li class="dropdown" style="margin-top: -4px;">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/24.jpg" alt="" class="img-circle"></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="secondbar">
+    <div class="pull-right">
+      <div class="btn-group">
+        <a href="#" class="btn btn-link"><i class="fa fa-undo"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-undo fa-flip-horizontal"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-save"></i></a>
+      </div>
+    </div>
+    <ol class="breadcrumb">
+      <li><a href="index.html" class="bcbar"><i class="fa fa-arrow-left"></i></a></li>
+      <li class="active">Churn Project</li>
+    </ol>
+  </div>
+  <div class="container-fluid">
+    <ul class="tabs">
+      <li><a href="prepare.html">Prepare</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="analyze.html">Analyze</a></li>
+      <li class="active"><a href="report.html">Report</a></li>
+    </ul>
+    <hr class="tabbreak">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#Pins">Pins</a></div>
+            <div id="Pins" class="collapse in">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Much Longer Pin Name</a>
+                <a href="#" class="list-group-item all-scroll">Some Pin Name</a>
+                <a href="#" class="list-group-item all-scroll">A Pin Name</a>
+                <a href="#" class="list-group-item all-scroll">This Pin Name</a>
+                <a href="#" class="list-group-item all-scroll">Another Pin</a>
+                <a href="#" class="list-group-item all-scroll">Longer Pin Name</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#Text">Text and Media</a></div>
+            <div id="Text" class="collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Small Text</a>
+                <a href="#" class="list-group-item all-scroll">Medium Text</a>
+                <a href="#" class="list-group-item all-scroll">Large Text</a>
+                <a href="#" class="list-group-item all-scroll">Huge Text</a>
+                <a href="#" class="list-group-item all-scroll">Bulleted List</a>
+                <a href="#" class="list-group-item all-scroll">Numbered List</a>
+                <a href="#" class="list-group-item all-scroll">Image</a>
+                <a href="#" class="list-group-item all-scroll">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="markdown"><h1>How Your Hometown Affects Your Chances of Marriage</h1><h4>Growing up in some places makes people less likely to marry.</h4></div>
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group overflow">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Move Up</a></li>
+                <li><a href="#">Move Down</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-heading">Some Chart</div>
+          <div class="panel-body">
+            <div id="chart_chart01" style="width: 100%; height: 375px;"></div>
+          </div>
+        </div>
+        <div class="markdown"><h1>Not Married</h1><h4>The New York Effect</h4></div>
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group overflow">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Move Up</a></li>
+                <li><a href="#">Move Down</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-heading">Some Chart</div>
+          <div class="panel-body">
+            <div id="chart_chart02" style="width: 100%; height: 375px;"></div>
+          </div>
+        </div>
+        <div class="markdown"><p>Their study included data on children who were born around 1980, roughly the same time period as the data we used. It measured enrollment by age 19; the data we used measured enrollment by age 21. In the bottom income quartile, about one-third of the children who started college had earned a bachelor’s degree by the time they were 25.</p></div>
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group overflow">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Move Up</a></li>
+                <li><a href="#">Move Down</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-heading">Some Chart</div>
+          <div class="panel-body">
+            <div id="chart_chart03" style="width: 100%; height: 375px;"></div>
+          </div>
+        </div>
+        <div class="markdown"><p>It does not seem to simply delay marriage; the researchers found very similar patterns when they looked at the data up to age 30. The places that made marriage more likely at 26 also tended to make it more likely at age 30. The children in the study aren’t yet old enough for conclusions beyond age 30.</p></div>
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group overflow">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Move Up</a></li>
+                <li><a href="#">Move Down</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-heading">Some Chart</div>
+          <div class="panel-body">
+            <div id="chart_chart04" style="width: 100%; height: 375px;"></div>
+          </div>
+        </div>
+        <div class="markdown"><p>By comparison, a childhood in Manhattan, on the other end of the spectrum, makes marriage only 12 percentage points less likely.</p></div>
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group" style="margin-right: -4px;">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Bar Chart</a></li>
+                <li><a href="#">Box Plot</a></li>
+                <li><a href="#">Bubble Plot</a></li>
+                <li><a href="#">Correlation Matrix</a></li>
+                <li><a href="#">Heat Map</a></li>
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Line Chart</a></li>
+                <li><a href="#">Pie Chart</a></li>
+                <li><a href="#">Scatter Plot</a></li>
+                <li><a href="#">Tree Map</a></li>
+              </ul>
+            </div>
+            <div class="btn-group overflow">
+              <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Move Up</a></li>
+                <li><a href="#">Move Down</a></li>
+                <li><a href="#">Remove</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-heading">Some Chart</div>
+          <div class="panel-body">
+            <div id="chart_chart05" style="width: 100%; height: 375px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="panel-group" id="accordion2">
+          <div class="panel panel-default">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Properties">Properties</a></div>
+            <div id="Properties" class="collapse in">
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label>Bar Direction</label>
+                    <select class="form-control"><option>Horizontal</option><option>Vertical</option></select>
+                  </div>
+                  <div class="form-group">
+                    <label>Grouping Style</label>
+                    <select class="form-control"><option>Cluster</option><option>Stack</option></select>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Show data labels
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Show grid lines
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Show X axis label
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Show Y axis label
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="toggle pull-right"><div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a></div></div>
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Styles">Styles</a></div>
+            <div id="Styles" class="collapse">
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label>Style 1</label>
+                    <input type="color" class="color-control" value="#3d5aae">
+                  </div>
+                  <div class="form-group">
+                    <label>Style 2</label>
+                    <input type="color" class="color-control" value="#90b328">
+                  </div>
+                  <div class="form-group">
+                    <label>Style 3</label>
+                    <input type="color" class="color-control" value="#ec407a">
+                  </div>
+                  <div class="form-group">
+                    <label>Style 4</label>
+                    <input type="color" class="color-control" value="#00929f">
+                  </div>
+                  <div class="form-group">
+                    <label>Style 5</label>
+                    <input type="color" class="color-control" value="#f08000">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="toggle pull-right"><div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a></div></div>
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion2" href="#Roles">Roles</a></div>
+            <div id="Roles" class="collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item all-scroll">Category</a>
+                <a href="#" class="list-group-item all-scroll">Some Category</a>
+                <a href="#" class="list-group-item all-scroll">A Measure</a>
+                <a href="#" class="list-group-item all-scroll">This Measure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="js/amcharts.js"></script>
+  <script src="js/serial.js"></script>
+  <script src="js/xy.js"></script>
+  <script src="js/chart_chart01.js"></script>
+  <script src="js/chart_chart02.js"></script>
+  <script src="js/chart_chart03.js"></script>
+  <script src="js/chart_chart04.js"></script>
+  <script src="js/chart_chart05.js"></script>
+  <script> $(document).ready(function() { $('body').tooltip({ selector: "[data-tooltip=tooltip]", container: "body" }); }); </script>
+  <script> $("#toolbar").css("height", $(document).height() - $("#toolbar").offset().top); </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SAS Analytics Platform - Analyze</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/analytics.css" rel="stylesheet">
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><script src="js/respond.min.js"></script><![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">SAS Analytics Platform</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><i class="fa fa-search"></i></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success">4</span></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Josephine Holt added College Scorecard.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Jason Moreno joined.<div class="text-muted">18 minutes ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Attrition Stem finished running.<div class="text-muted">12 hours ago</div></a></li>
+          <li class="divider"></li>
+          <li><a href="#">Segment ID failed.<div class="text-muted">2 days ago</div></a></li>
+          <li class="divider"></li>
+          <li style="padding: 10px;"><button class="btn btn-default btn-block">Mark All as Read</button></li>
+        </ul>
+      </li>
+      <li class="dropdown" style="margin-top: -4px;">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/24.jpg" alt="" class="img-circle"></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="secondbar">
+    <div class="pull-right">
+      <div class="btn-group">
+        <a href="#" class="btn btn-link"><i class="fa fa-undo"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-undo fa-flip-horizontal"></i></a>
+        <a href="#" class="btn btn-link"><i class="fa fa-save"></i></a>
+      </div>
+    </div>
+    <ol class="breadcrumb">
+      <li><a href="index.html" class="bcbar"><i class="fa fa-arrow-left"></i></a></li>
+      <li class="active">Churn Project</li>
+    </ol>
+  </div>
+  <div class="container-fluid">
+    <ul class="tabs">
+      <li><a href="prepare.html">Prepare</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li class="active"><a href="analyze.html">Analyze</a></li>
+      <li><a href="report.html">Report</a></li>
+    </ul>
+    <hr class="tabbreak">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="toggle pull-right">
+            <div class="btn-group">
+              <a href="#" class="btn btn-default"><i class="fa fa-code"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-play"></i></a>
+            </div>
+          </div>
+          <div class="panel-heading"><a data-toggle="collapse" href="#Diagram">Diagram</a></div>
+          <div id="Diagram" class="collapse in">
+            <div class="panel-body" style="background: #21252c;">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="node">Data<div class="text-muted">Status</div></div>
+                </div>
+                <div class="col-md-2">
+                  <div class="node node-preparation">Partition<div class="text-muted">Status</div></div>
+                </div>
+                <div class="col-md-2">
+                  <div class="node node-preparation">Impute<div class="text-muted">Status</div></div>
+                </div>
+                <div class="col-md-2">
+                  <div class="node node-engineering">Transform<div class="text-muted">Status</div></div>
+                </div>
+                <div class="col-md-2">
+                  <div class="node node-preparation">Code Snippet<div class="text-muted">Status</div></div>
+                </div>
+                <div class="col-md-2">
+                  <div class="node">Decision Tree<div class="text-muted">Status</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sunburst <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Decision Tree</a></li>
+                    <li><a href="#">Icicle Plot</a></li>
+                    <li><a href="#">Sunburst</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel-body" id="tree">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="toggle pull-right">
+                <div class="btn-group" style="margin-right: -4px;"><a href="#" class="btn btn-default"><i class="fa fa-thumb-tack"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-expand"></i></a></div>
+              </div>
+              <div class="panel-heading">Model Specific Chart</div>
+              <div class="panel-body">
+                <div id="chart_chart02" style="width: 100%; height: 375px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="toggle pull-right">
+                <div class="btn-group" style="margin-right: -4px;"><a href="#" class="btn btn-default"><i class="fa fa-thumb-tack"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-expand"></i></a></div>
+              </div>
+              <div class="panel-heading">Assessment</div>
+              <div class="panel-body">
+                <div id="chart_chart05" style="width: 100%; height: 375px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="toggle pull-right">
+                <div class="btn-group" style="margin-right: -4px;"><a href="#" class="btn btn-default"><i class="fa fa-thumb-tack"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-expand"></i></a></div>
+              </div>
+              <div class="panel-heading">Cumulative Lift</div>
+              <div class="panel-body">
+                <div id="chart_chart03" style="width: 100%; height: 375px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="toggle pull-right">
+                <div class="btn-group" style="margin-right: -4px;"><a href="#" class="btn btn-default"><i class="fa fa-thumb-tack"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-default"><i class="fa fa-expand"></i></a></div>
+              </div>
+              <div class="panel-heading">Model Specific Chart</div>
+              <div class="panel-body">
+                <div id="chart_chart01" style="width: 100%; height: 375px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Fit Statistics</div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Training</th>
+                    <th>Validation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Number of Observations</td>
+                    <td>.1452</td>
+                    <td>.1562</td>
+                  </tr>
+                  <tr>
+                    <td>Predicted Count</td>
+                    <td>.5</td>
+                    <td>1.8</td>
+                  </tr>
+                  <tr>
+                    <td>Predicted Missing</td>
+                    <td>.1452</td>
+                    <td>860</td>
+                  </tr>
+                  <tr>
+                    <td>Root Average Squared Error</td>
+                    <td>.1562</td>
+                    <td>860</td>
+                  </tr>
+                  <tr>
+                    <td>Sum of Squares Errors</td>
+                    <td>.1529</td>
+                    <td>4092</td>
+                  </tr>
+                  <tr>
+                    <td>Target Count</td>
+                    <td>1.8</td>
+                    <td>.1562</td>
+                  </tr>
+                  <tr>
+                    <td>Target Missing</td>
+                    <td>.1562</td>
+                    <td>1.8</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">Decision Tree</div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label>Nominal Target Criterion</label>
+                <select class="form-control"><option>Entropy</option><option>Fast Chaid</option><option>GINI</option><option>Chi-Square</option></select>
+              </div>
+              <div class="form-group">
+                <label>Interval Target Criterion</label>
+                <select class="form-control"><option>Variance</option><option>F Test</option></select>
+              </div>
+              <div class="form-group">
+                <label>Maximum Branch</label>
+                <input type="text" class="form-control" value="2">
+              </div>
+              <div class="form-group">
+                <label>Interval Bins</label>
+                <input type="text" class="form-control" value="100">
+              </div>
+              <div class="form-group">
+                <label>Leaf Size</label>
+                <input type="text" class="form-control" value="5">
+              </div>
+              <div class="form-group">
+                <label>Maximum Selected</label>
+                <input type="text" class="form-control" value="4">
+              </div>
+              <div class="form-group">
+                <label>Relative Importance Cutoff</label>
+                <input type="text" class="form-control" value="0.05">
+              </div>
+            </form>
+          </div>
+          <div class="panel-footer">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" checked> Autotune
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="js/amcharts.js"></script>
+  <script src="js/serial.js"></script>
+  <script src="js/xy.js"></script>
+  <script src="js/chart_chart01.js"></script>
+  <script src="js/chart_chart02.js"></script>
+  <script src="js/chart_chart03.js"></script>
+  <script src="js/chart_chart05.js"></script>
+  <script src="js/tree.js"></script>
+  <script> $(document).ready(function() { $('body').tooltip({ selector: "[data-tooltip=tooltip]", container: "body" }); }); </script>
+  <script> $("#toolbar").css("height", $(document).height() - $("#toolbar").offset().top); </script>
+</body>
+</html>
